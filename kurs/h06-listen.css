@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+#rot {
+    color: red;
+}
+
+ul.gruen {
+    color: #beffca;
+}
+
+.gruen {
+    color: green;
+}
+
+ol ol li {
+    color: orange;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+dl dt {
+    font-weight: bold;
+    color: #710069;
+}
+dl dd {
+    font-style: italic;
+}

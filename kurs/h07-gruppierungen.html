@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Gruppierungen</title>
+	<style>
+		code.perl {
+			background-color: #FFFFCC;
+		}
+	</style>
+</head>
+<body>
+	<h2>Gruppierungen mit <b>figure</b></h2>
+	<figure>
+		<figcaption>Ein schönes Bild</figcaption>
+		<img src="../img/pencil.jpg" width="303" height="238" alt="Blume">
+	</figure>
+	<h2>Source mit figure und pre formatiert</h2>
+	<figure>		
+		<pre><code class="perl">#!/usr/bin/perl
+use strict;
+var i;			
+for (i=0;i<10;i++) {}</code></pre>
+		<figcaption><b>Listing 2:</b> Ein wichtiger Sourcecode</figcaption>
+	</figure>
+	<h2>wichtige Bereiche</h2>
+	<table>
+		<tr><td>blockquote</td><td>Zitate </td></tr>
+		<tr><td>code</td><td>Sourcodebereiche</td></tr>
+		<tr><td>pre</td><td>präformatierter Text mit Leerzeichen und Zeilenvorschub</td></tr>
+		<tr><td>div</td><td>allgemeiner Bereich, Verwendung für Formatierungen mit Zeilenvorschub</td></tr>
+		<tr><td>section</td><td>Abschnitt</td></tr>
+		<tr><td>header</td><td>Kopfbereich</td></tr>
+		<tr><td>footer</td><td>Fußbereich</td></tr>
+		<tr><td>article</td><td>Artikel</td></tr>
+		<tr><td>nav</td><td>Navigationsbereich</td></tr>
+		<tr><td>aside</td><td>Seitenbereich</td></tr>
+		<tr><td>address</td><td>Adressbereich</td></tr>
+		<tr><td>p</td><td>Absatz</td></tr>
+		<tr><td>figure</td><td>Bild, Source usw. mit Beschriftung</td></tr>
+		<tr><td>figcaption</td><td>Beschriftung einer figure</td></tr>
+		<tr><td>cite</td><td>Titel, Bezeichnung eines Werks</td></tr>
+		<tr><td>span</td><td>Allgemeines Textelement für Formatierungen mit CSS,JS</td></tr>
+		<tr><td>ruby</td><td><ruby>Bereich einer Ruby Annotion <rp>Ruby Klammer</rp> <rt>Textteil Ruby</rt></ruby></td></tr>
+	</table>
+	<h2>Textelemente</h2>
+	<table style="border: 1px solid black;">
+		<tr><td>a</td><td>Anker für Hyperlinks</td><td><a href="https://www.google.com">link</a></td></tr>
+		<tr><td>abbr</td><td>Abkürzung</td><td><abbr>Abkürzung</abbr></td></tr>
+		<tr><td>b</td><td>Hervorhebung (fett)</td><td><b>fett</b></td></tr>
+		<tr><td>bdo</td><td>Textrichtung ändern</td><td><bdo dir="rtl">Textrichtung</bdo></td></tr>
+		<tr><td>dfn</td><td>Definition</td><td><dfn>Definition</dfn></td></tr>
+		<tr><td>em</td><td>gefühlsmäßig betont</td><td><em>betont</em></td></tr>
+		<tr><td>i</td><td>stilistische Benennung</td><td><i>stilistisch</i></td></tr>
+		<tr><td>kbd</td><td>über die Tastatur einzugebender Text</td><td><kbd>Tastatur</kbd></td></tr>
+		<tr><td>mark</td><td>selektierter Text</td><td><mark>selektiert</mark></td></tr>
+		<tr><td>q</td><td>wörtliche Rede</td><td><q>wörtlich</q></td></tr>
+		<tr><td>samp</td><td>Beispiel</td><td><samp>Beispiel</samp></td></tr>
+		<tr><td>small</td><td>kleingedrucktes</td><td><small>kleingedruckt</small></td></tr>
+		<tr><td>strong</td><td>hervorgehoben</td><td><strong>hervorgehoben</strong></td></tr>
+		<tr><td>sub</td><td>tiefgestellt</td><td><sub>tiefgestellt</sub></td></tr>
+		<tr><td>sup</td><td>hochgestellt</td><td><sup>hochgestellt</sup></td></tr>
+		<tr><td>time</td><td>Datums- oder Zeitangabe</td><td><time>2.12.2011</time></td></tr>
+		<tr><td>var</td><td>für frei wählbare Bezeichnernamen</td><td><var>Variable</var></td></tr>
+	</table>
+	<h2>Elemente für Änderungsmarkierungen</h2>
+	<table  style="border: 1px solid black;">
+		<tr><td>del</td><td>zu löschender Text</td><td><del cite="Text leider falsch">zu löschender Text</del></td></tr>
+		<tr><td>ins</td><td>eingefügter Text</td><td><ins datetime="2.12.2011">eingefügter Text</ins></td></tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Textgestaltung</title>
+	<style>
+		body {
+			background-color:#FFFFAF;
+			color: darkgreen;
+		}
+		.nobr	{ white-space:nowrap; }
+		.center { text-align: center;}
+		.right  { text-align: right;}
+	</style>
+</head>
+<body>
+	<h1>Textgestaltung</h1>
+	<h2>Überschrift 2</h2>
+	<h3>Überschrift 3</h3>
+	<h4>Überschrift 4</h4>
+	<h5>Überschrift 5</h5>
+	<h6>Überschrift 6</h6>
+	<p style="text-align: justify;">Hier steht der Text der angezeigt werden soll.
+	Dieser Text ist sehr lange, und geht über mehrere Zeilen.
+	Hier steht der Text der angezeigt werden soll.
+	Dieser Text          ist sehr lange, und geht über mehrere Zeilen.
+	Hier steht der
+
+	Text der angezeigt werden soll.
+	Dieser Text ist sehr lange, und geht über mehrere Zeilen. </p>
+	Das Naechste ist ein neuer Absatz.<p>
+    Und nun ein Zeilenumbruch <br />
+ 	es geht in einer neuen Zeile weiter.<p>
+	
+ 	<p class="nobr"> Dieser Tag verhindert einen Zeilenumbruch.
+ 		Der kleine Text wird bei zu kleinem Fenster mit einem
+ 		Rollbalken dargestellt.
+ 	</p>
+ 	<p> Große Absätze: </p>
+ 	<p>&nbsp;&nbsp;&nbsp;Leerzeichen <!-- ein festes Leerzeichen --> </p>
+ 	
+ 	<p class="center"> Dieser Absatz steht zentriert <br>
+    	auch bei mehreren Zeilen
+ 	</p>
+ 	<p class="right"> Rechtsbuendig</p>
+ 	<p style="text-align: left;">  Linksbuendig </p>
+ 	<p style="text-align: center;">Hallali</p>
+ 	<div style="text-align: center;"> Zentriert</div> weiter
+
+	<b>Fettschrift</b>, <i>Kursivschrift</i> und 
+	<hr /> <!-- horizontale Linie -->
+	
+	Normaler Text <sub> sub: Tiefgeste<sup>ll</sup>ter </sub> und 
+	<sup> sup: Hochgestellter </sup> Text
+  	Normaler <b>Text</b>! <br />
+	<i>i:Dieser Text ist kursiv geschrieben.</i><br />
+	<s>s:Durchgestrichen, in HTML5 nicht empfohlen!!</s> <br />
+	<u>u:Unterstrichen, in HTML5 nicht empfohlen!!</u> <br />
+	<b>b:Ein fett gedruckter Text.</b> <br />
+
+	Folgende Zeilen sind in der Kommandozeile einzugeben
+<pre>c:\copy con t.t
+   copy t.1 t.2
+    del <b>t.1</b>
+     copy t.3 t.1
+      copy t.2 t.3
+</pre>
+	Abschließend drücken sie F6!<br />
+	<strong>strong: Hervorhebung</strong><br />
+	<samp>samp: Beispiel fuer Listings</samp><br />
+	<small>small: Kleinerer Text</small><br />
+	<div style="font-size: large;">größerer Text</div>
+	
+	<hr />
+	normale Schriftgröße
+	<div style="font-size: 1.2em;"> Und nun um eines Größer! </div>
+    <nobr style="font-size:1.5em;color:red;"> Dieser Text ist maximal und rot</nobr><br />
+
+	<h1 style="text-align: center;">Dies ist eine supergroße Überschrift</h1>
+    <h6 style="color:red">
+    	Dies ist die kleinste rote Überschrift
+    </h6>
+    
+    <div style="font-family:VERDANA,ARIAL,HELVETICA,serif;">
+    	Und nun Verdana, Arial oder Helvetica!
+    </div> <br />
+	<div style="font-family:monospace">
+	 	Und nun in Monospace 
+	</div><br />
+	<div style="font-family:COURIER NEW,monospace;font-size:2em">riesig in Courier</div>
+	
+	<hr />
+
+	<p style="color:black"> Das ist ein schwarzer Text</p>
+	<div style="color:blue"> Jetzt gehts blau weiter </div> <br />
+    <div style="color:#FF7D7B"> Und nun hellrot</div>
+    
+    <hr />
+    Mit <b>Blockquote</b> kann man Blockweise einrücken:
+    <blockquote>
+    	Dieser Text ist jetzt um einen Schritt eingerückt und kann 
+    	deshalb etwas hervorgehoben wirken.
+    	<pre>Diser Text ist mittels blockquote eingerückt
+und mit pre verblockt
+  geht doch schon ganz gut!!
+</pre>
+		<blockquote>
+			und jetzt ein zweitesmal blockquote verschachtelt!!
+		</blockquote>
+    </blockquote>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+body {
+	background-color: #CCFFFF;
+	margin-left:100px;
+}
+*  {
+	color:magenta;
+}
+h1 {
+	color:green;
+	border-bottom:solid thin black;		
+}
+p  {
+	color:red;
+}
+div#gelb {
+	color:yellow;
+}
+div#gruen {
+	color:green;
+}

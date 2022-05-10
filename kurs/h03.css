@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+body   {
+	background-color : #CCCCFF;
+}
+header {
+	background-color : #CCFFFF;
+	color            : red;
+}
+footer {
+	background-color : black;
+	color            : white;
+}
+nav    {
+	background-color : #FFFFCC; 
+}
+aside{
+	background-color : #FFCCFF;
+	text-align       : right;
+	vertical-align   : top;
+	float            : left;
+}
+

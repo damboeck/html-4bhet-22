@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Bilder</title>
+</head>
+<body>
+	<h2>Bilder einbinden</h2>
+	<a href="https://www.letto.at"><img src="../img/kaffee.gif" style="width:20%" alt="Kaffee kann nicht geladen werden"></a>
+	<img src="../img/kaffee.gif" alt="Blume" height="150">
+	<img src="../img/kaffee.gif" title="Blume" width="150" alt="Kaffee kann nicht geladen werden"> <!-- geh mit der Maus aufs Bild! -->
+	<img src="../img/kaffee.gif" width="100" height="100" alt="Kaffee kann nicht geladen werden">
+	<img src="../img/kaffee.gif" alt="Blume" width="100" height="100">
+		
+	<h2>Verweis-sensitive Bilder</h2>
+	<img src="../img/globe.jpg" width="400" height="400" usemap="#Karte" alt="Globe kann nicht geladen werden">
+	<map name="Karte">
+		<area shape="rect"   coords="10,10,50,50" href="https://www.google.com" alt="rect">
+		<area shape="circle" coords="100,100,50"  href="https://www.otb.at" alt="circle">
+		<area shape="poly" coords="200,200,400,200,300,400" href="https://www.htlstp.ac.at" alt="poly">
+	</map>
+	
+</body>
+</html>

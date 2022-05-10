@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabellen</title>
+	<style>
+		table { border: 1px solid grey; }
+		th,td { border: 1px solid grey; }
+	</style>
+</head>
+<body>
+	<h2> Beispieltabelle </h2>
+
+	<table style="border: 2px solid black">
+		<tr>
+			<td>Diese Tabelle enth&auml;lt zwei Spalten</td>
+			<td>und nur eine Zeile</td>
+		</tr>
+		<tr>
+			<td>Jetzt sind wir in der zweiten Zeile</td>
+			<td>und auch eine zweite Spalte</td>
+		</tr>
+		<caption style="caption-side: bottom;">Tabellenunterschrift</caption>
+	</table>
+	
+	<h2>logische Teilung der Tablle</h2>
+	Eine Tabelle laesst sich in Tabellenkopf (THEAD),
+	Koerper(TBODY) u. Fuss(TFOOT) logisch aufteilen<br><p>
+	
+	<table>
+		<caption style="caption-side: top;">Tabellenüberschrift</caption>
+		<thead style="color:red;">
+		 	<tr>
+		   		<td><b>Material 1</b></td><td>Material 2</td>
+		   		<th>Material 3</th>
+		 	</tr>
+		</thead>
+		<tbody>
+		 	<tr>
+		   		<td>Eisen<td>Watte<td>&Ouml;l</td>
+		 	</tr><tr>
+		   		<td>Steine<td>Stoff<td>Wasser</td>
+		 	</tr><tr>
+		   		<td>Keramik<td>Fell<td>Milch</td>
+		   	</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+		   		<td><i>Hart</i></td>
+		   		<td><i>Weich</i></td>
+		   		<td><i>Flüssig</i></td>
+	   		</tr>
+		</tfoot>
+	</table>
+	
+	<h2>Ausrichtung</h2>
+	Zelleninhalte lassen sich mit ALIGN wieder ausrichten <P>
+	<table>
+	   <tr>
+	      <th style="text-align: left;">links ausgerichtet</th>
+	      <th>standard</th>
+	      <th style="text-align: right;">rechts ausgerichtet</th>
+	   </tr>
+	   <tr>
+	      <td>standard</td>
+	      <td style="text-align: center">zentriert ausgerichtet</td>
+	      <td style="text-align: right">rechts ausgerichtet</td>
+	   </tr>
+	</table>
+	
+	<h2>Zellen oder Spalten Verbinden</h2>
+	Zellen verbinden erfolgt mit dem Attribut COLSPAN,
+	dem die Anzahl der zu verbindenen<br>
+	Spalten uebergeben wird.<br>
+	ROWSPAN verbindet Zeilen
+	<p>
+	<table> <!--Beispiel fuer COLSPAN-->
+	   <tr>
+	      <th colspan=2>Speiseplan Montag</th>
+	   </tr><tr>
+	      <td>Nudeln mit Sosse</td>
+	      <td>Sosse mit Nudeln</td>
+	   </tr>
+	</table>	
+	<p>
+	<table>  <!--Beispiel fuer ROWSPAN-->
+	   <tr>
+	      <td>Nudeln mit Sosse</td>
+	      <th rowspan=3>Speiseplan Montag</th>
+	   </tr>
+	   <tr>
+	      <td>Sosse mit Nudeln</td>
+	   </tr>
+	   <tr><td>irgendwas</td></tr>
+	</table>
+	  
+	<h2>Spaltengruppen bilden</h2>
+	  
+	<table>
+		<colgroup class="sp1"> 
+			<col style="background-color:red"  /> 
+			<col style="background-color:blue" /> 
+		</colgroup>
+		<colgroup span="3" style="background-color:green"></colgroup>
+		<tr style="font-weight: bold"> 
+			<td>Katze</td>
+			<td>Maus</td>
+			<td>Löwe</td>
+			<td>Hund</td>
+			<td>Elefant</td>
+			<td>Eichkätzchen</td>
+		</tr>
+		<tr>
+			<td>Maus</td>
+			<td>Insekt</td>
+			<td>Gazelle</td>
+			<td>Hase</td>
+			<td>Gras</td>
+			<td>Nuß</td>
+		</tr>		  	
+	</table>
+   
+</body>
+</html>

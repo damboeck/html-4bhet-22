@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulare</title>
+</head>
+<body>
+	<h2>Formular mit post</h2>
+	Formularelemente werden versteckt übertragen!
+	<form action="h14-formulare.html" method="post" name="postformular">
+		<label for="name">Name:</label><input type="text" size="40" name="name" id="name">
+		<input type="submit" value="ok">		
+	</form>
+	
+	<h2>Formular mit get</h2>
+	Hier sind alle Formularelemente an die URL angehängt! 
+	<form action="h14-formulare.html" method="get" name="getformular">
+		<label>Vorname:
+			<input type="text" size="40" name="vorname" id="vorname">
+		</label>	
+		<input type="submit" value="ok">
+	</form>
+
+	<h2>Formular als Mail</h2>
+	<form action="mailto:werner.damboeck@htlstp.ac.at" method="post" enctype="text/plain">
+		<label>Familienname:
+			<input type="text" size="40" name="famname" id="famname">
+		</label>	
+		<input type="submit" value="ok"><br>
+		<label>Passwort:
+			<input type="password" size="12" name="kw" id="kw" maxlength="12">
+		</label><br>
+		<label>Textfeld:<br>
+			<textarea name="textfeld" cols="50" rows="10" maxlength="10000" wrap="soft">Bla, bla, bla, ...
+			</textarea>
+		</label>		
+	</form>
+</body>
+</html>

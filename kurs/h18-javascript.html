@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Java-Script</title>
+	
+	<script src="h18-test1.js" charset="utf-8"></script>
+	<script>
+		function print7() {
+			let t1 = document.getElementById("t1");
+			let i;
+			t1.innerHTML="<h4>7-er Reihe:</h4>";
+			for (i=0;i<=10;i++) {
+				t1.innerHTML += i+"x7="+(i*7)+"<br>";
+				//t1.innerHTML="sdfwef";
+			}			
+		}		
+	</script>	
+	
+</head>
+<body onload="ch('info1');" onresize="ch('info1');">
+	<h2>JAVA - Script</h2>
+	<div id="t1"><script>print7();</script></div>
+	<div id="t2"></div><p>
+	<div id="info1"></div>
+	<script>
+		for(let j=1; j<=10; j++) printR(j,"t2");
+	</script>
+</body>
+</html>

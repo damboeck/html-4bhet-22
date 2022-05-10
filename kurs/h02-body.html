@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Body</title>
+	<style>
+		nav { 
+			width: 250px; 
+			float: left;
+			background: magenta; 
+		}
+		article {
+			background : #AAFFFF;
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<h1>Body</h1>
+	Der Body beinhaltet den eigentlichen Text der Seite!<br/>
+	</header>
+	
+	Header und footer sollten nur einmal in einem html-Dokument vorkommen, der
+	nav- und aside Bereich kann mehrmals vorkommen. <br>
+	articel und section können ebenfalls mehrmals und verschachtelt vorkommen<br> 
+	
+	<nav>
+	<ul>
+		<li>header : Kopfbereich der Seite</li>
+		<li>footer : Fußbereich der Seite</li>
+		<li>nav    : Navigationsbereich der Seite </li>
+		<li>aside  : Seitenbereich der Seite </li>
+		<li>article: Artikelbereich</li>
+		<li>section: Kapitel eines Artikels</li>
+	</ul>	
+	</nav>
+	Ohne CSS haben die Bereiche keinen Einfluß auf die Darstellung, erst durch CSS
+	erhalten sie eine Formatierung und können somit zur Gestaltung der Seite verwendet
+	werden.
+	
+	<article>
+		<section>
+			<header>
+				<h3>Kapitel 1</h3>
+			</header>
+			Dies ist das erste Kapitel eines Artikels.
+			<footer>
+				<address>
+					(c) DI Werner Damböck
+				</address>
+			</footer>
+		</section>
+		<section>
+			<header>
+				<h3>Kapitel 2</h3>
+			</header>
+			Dies ist das zweite Kapitel eines Artikels.
+		</section>
+	</article>
+	
+	<aside>
+	Dies ist der Seitenbereich der Seite.
+	</aside>
+		
+	<footer>
+	(c) 2011 DI Werner Damböck
+	</footer>
+</body>
+</html>

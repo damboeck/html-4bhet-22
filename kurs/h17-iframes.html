@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>iFrames</title>
+</head>
+<body>
+	<h2>iFrame</h2>
+	<iframe src="h02-body.html" width="500" height="200" style="border: 1px solid grey;">
+		keine iFrames möglich!!
+	</iframe>	
+	<h2>targets von iFrames</h2>
+	<a href="h17-if02.html" target="ziel">origin</a><br>
+	<iframe src="h17-if01.html" style="border:0; float:left;">
+	</iframe>
+	<iframe src="h17-if02.html" name="ziel"  
+	        width="500" height="300" style="border: 1px solid black;">
+	</iframe><br>
+	
+	<!-- inkludieren statt iFrames -->
+	<b>	
+		Wenn der Text unterhalb auch fett erscheint funktioniert seamless!<br>
+		<iframe seamless src="h17-if03-include.html"></iframe>
+	</b>	
+	
+	
+</body>
+</html>

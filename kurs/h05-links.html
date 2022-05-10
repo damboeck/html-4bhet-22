@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Links</title>
+</head>
+<body>
+	Links werden mit dem Anker <b>&lt;a&gt;</b> Tag realisiert.<br />
+	<a href="https://www.htlstp.ac.at">Webseite der HTL</a>
+	<p>
+		Bei größeren HTML-Seiten benötigt man Verweise innerhalb der Seite <br>
+		Man setzt zuerst einen Anker, z.B. 'Anfang' am Beginn der Seite <br>
+		<a id="Anfang"> Der erste Anker </a><br />
+		<a href="#Anfang"><span style="font-size: 1.2em">Bleibe da</span></a>
+	</p>
+	<p>
+		<a href="../img/back.gif">öffnen von Back.gif</a><br>
+		Bei einem Verweis wird jetzt der Ankername mit #ANKERNAME referenziert.
+	</p>
+	<a href="#Ende">Hier geht es zum Ende der Datei</a><br />
+	<a href="../img/auto_gelb.gif">Auto_gelb.gif</a>
+	<p>
+		Absolute Angabe:
+		<a href="https://www.google.com">https://www.google.com</a>	<br />
+		relative Angaben:<br>
+		<!--a href="../index.html">Relativ eine Verzeichnisebene h&ouml;her</a><br-->
+		<a href="../img/auto_gelb.gif">Auto</a><br>
+		<a href="h04-text.html">im gleichen Verzeichnis</a><br>
+	</p>
+	<h4>Linkgrundlagen:</h4>
+	Die Grundstruktur eines Links lautet:<br>
+	&lt;-a "[Typ]=[Bezeichner]"-&gt;[Linktext] &lt;-/A-&gt;<br>
+	Linktext sieht der Besucher <br>
+	Type gibt die Linkart an z.B HREF <br>
+	Bezeichner ist die URL <p>
+	Beispiel:<br>
+	<a href="https://www.htlstp.ac.at">Hier gehts zur HTL-St.Poelten</a><br>
+	Durch die Protokollangabe kann man
+ 	beliebige Internetdienste aufrufen <br>
+ 	HTTP:   HTML-Seite<br>
+ 	FILE:   Datei adressieren,der Dateityp entscheidet was geschieht; <br>
+    	    was im Browser eingestellt ist.<br>
+ 	FTP:    Dateidownload<br>
+ 	MAILTO: Mail senden
+	
+	<h4>Beispiele:</h4>
+
+	<a href="ftp://ftp.microsoft.com">FTP-Server MICROSOFT</a>
+	<br>
+	<a href="file:///" target="_blank">Root Filesystem in Linux</a><br />
+	<a href="mailto:bill.gates@microsoft.com">Ein mail senden </a><br>
+
+	<a href="#Anfang">Hier geht es zum Anfang der Datei</a>
+	<p>
+		<a id="Ende">Hier ist die Seite zu Ende</a>
+	</p>	
+	Dies ist der letzte Satz am Seitenende.
+</body>
+</html>

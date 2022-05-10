@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio</title>
+	<style>
+		table { border: 1px solid grey; }
+		th,td { border: 1px solid grey; }
+	</style>
+</head>
+<body>
+	<h2>Audiodateien</h2>
+	<audio preload controls>
+		<source src="../audio/lied1.mp3" />
+	</audio>
+	<table>
+		<tr><td>preload</td><td>Datei sofort laden</td></tr>
+		<tr><td>controls</td><td>sichtbaren Player anzeigen</td></tr>
+		<tr><td>autoplay</td><td>Datei automatisch abspielen</td></tr>
+		<tr><td>loop</td><td>endlos in einer Schleife wiedergeben</td></tr>
+	</table>
+	Als Dateiformat sollte man mp3 und ogg verwenden, damit die Musik auf allen 
+	Browsern abspielbar ist.
+	
+	<h2>Videodateien</h2>
+	<video preload controls poster="../img/blume.png" width="600" height="320">
+		<source src="../video/zug.mp4" />
+	</video>
+	<table>
+		<tr><td>preload</td><td>Datei sofort laden</td></tr>
+		<tr><td>controls</td><td>sichtbaren Player anzeigen</td></tr>
+		<tr><td>autoplay</td><td>Datei automatisch abspielen</td></tr>
+		<tr><td>loop</td><td>endlos in einer Schleife wiedergeben</td></tr>
+		<tr><td>poster</td><td>Bild welches während des Ladens angezeigt wird</td></tr>
+		<tr><td>width</td><td>Breite</td></tr>
+		<tr><td>height</td><td>Höhe</td></tr>
+		<tr><td>type</td><td>Mime-Type des Videos</td></tr>
+	</table>
+	Format: ogg(theora/vorbis) oder mp4(h264)<br>
+	
+	<h2>aktive Inhalte (Flash, JAVA, etc)</h2>
+	<object type="application/x-java-applet">
+		<param name="code" value="applet/BallApplet.class">
+		<p>Sie müssen Java installieren um die Seite korrekt anzeigen zu können!</p>
+	</object>
+	<object type="application/x-java-applet" width="300" height="300">
+		<param name="code" value="applet/Kreise.class">
+		<p>Sie müssen Java installieren um die Seite korrekt anzeigen zu können!</p>
+	</object>	<br>
+	Um ein JAVA-Applet richtig anzeigen zu können muss das Applet in einem 
+	Verzeichnis innerhalb des aktuellen Pfades sitzen, welches genau gleich wie
+	das JAVA-Package heißt (hier: applet).<br>
+	<p>
+		audio,video,svg und html(wie iframe) geht auch mit dem object tag.
+	</p>
+	 
+		
+	
+</body>
+</html>

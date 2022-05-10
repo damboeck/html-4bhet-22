@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		label { width: 200px;color:red;}
+	</style>	
+</head>
+<body>
+	<form action="h14-formulare-02.html" method="post" name="postformular">
+		<fieldset><legend>Absender</legend>
+			<p><label for="vorname">Vorname:</label> 
+			<input type="text" size="40" name="vorname" id="vorname"></p>
+			<p><label for="zuname">Zuname:</label> 
+			<input type="text" size="40" name="zuname" id="zuname"></p>
+			<p><label>
+				Handy: 
+				<input type="tel" size="40" name="handy" id="handy">
+		    </label></p>
+		</fieldset>
+		<fieldset><legend>kontrollierte Eingabeelemente (neu bei HTML5)</legend>
+			<p><label>tel:      <input type="tel"      name="tel"      id="tel">     </label>    
+			   <label>url:      <input type="url"      name="url"      id="url">     </label>    
+			   <label>email:    <input type="email"    name="email"    id="email">   </label></p>
+			<p><label>search:   <input type="search"   name="search"   id="search">  </label>
+			   <label>week:     <input type="week"     name="week"     id="week"    ></label></p>
+			<p><label>date:     <input type="date"     name="date"     id="date"    value="2011-12-24"></label>    
+			   <label>time:     <input type="time"     name="time"     id="time"    value="13:24:32"></label>    
+			   <label>month:    <input type="month"    name="month"    id="month"   ></label></p>
+			<p><label>number:   <input type="number"   name="number"   id="number"  ></label>    
+			   <label>range:    <input type="range"    name="range"    id="range" min="1" max="10"></label>    
+			   <label>color:    <input type="color"    name="color"    id="color"   ></label></p>			
+		</fieldset>
+		<fieldset><legend>Listen</legend>
+			<p> <label><b>Pizzen</b><br>
+				<select name="pizza" size="1" style="width:200px;">
+					<option value="napoli" selected>Pizza Napoli</option>
+					<option value="calzone">Pizza Calzone</option>
+				</select></label>
+			</p>
+			<label>
+				<select name="spagetti" size="5" style="width:200px;">
+					<option value="napoli" selected>Spagetti Napoli</option>
+					<option value="mare">Spagetti a Frutta di Mare</option>
+				</select>
+			</label>
+			<p><label><b>Weitere Zutaten:</b><br> 
+			(Mehrfachauswahl möglich)<br>
+			<select multiple name="options[]" size="8" style="width: 200px;">
+			  <option value="z1">Schinken</option>
+			  <option value="z2">Peperoni</option>
+			  <option value="z3">Paprika</option>
+			  <option value="z4">Artischocken</option>
+			  <option value="z5">Schafskäse</option>
+			</select></label></p>
+			 
+			<p><label><b>Wein:</b><br>
+			<select name="wein" size="8" style="width: 200px;">
+			  <optgroup label="Rotweine">
+			     <option value="valpolicella">Valpolicella</option>
+			     <option value="chianti">Chianti</option>
+			     <option value="montepulciano">Montpulciano</option>
+			  </optgroup>
+			  <optgroup label="Weißweine">
+			     <option value="soave">Soave</option>
+			     <option value="frascati">Frascati</option>
+			     <option value="trentino">Trentino</option>
+			  </optgroup>
+			</select></label></p>
+		</fieldset>
+		<label for="name">Name:</label>
+		<input type="text" size="40" name="name" id="name">
+		<input type="submit" value="ok">		
+	</form>
+</body>
+</html>

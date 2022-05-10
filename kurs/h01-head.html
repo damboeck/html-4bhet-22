@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<!-- durch das UTF-8 meta kann man im Text die deutschen Umlaute verwenden, wenn 
+	     man im Betriebssystem auch UTF-8 verwendet (zB. bei Linux) !!-->
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	
+	<!-- ****************************************************** 
+	     meta Beschreibungen für Suchmaschinen etc. -->
+	
+	<!-- noindex: Suchmaschine liest die Seite nicht aus
+	     nofollow:Suchmaschine folgt keinem Link auf der Seite -->
+	<meta name="robots"      content="noindex, nofollow">
+	 
+	<!-- Urheberrechtsangaben -->
+	<meta name="author"      content="Werner Damböck">
+	<meta name="creator"     content="Urheber der Seite">
+	<meta name="publisher"   content="Herausgeber der Seite">
+	
+	<!-- allgemein Angaben -->
+    <meta name="description" content="HTML-Beispiel">
+    <meta name="keywords"    content="HTML,Beispiele,Kurs">
+    <meta name="date"        content="14.2.2002">
+    <meta name="audience"    content="HTML-Ausbildung">	
+	
+	<!-- *****************************************************
+	     logische Verlinkungen, geben Verlinkungen zu Dateien der Webseite an -->
+	<!-- Icon der Webseite -->
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="icon.ico">
+	
+	<!-- Angabe einer css Style-Datei -->
+	<link rel="stylesheet" type="text/css" title="meine Formatierung" href="format.css"> 
+
+	<style>
+		p {color:yellow;}
+		.black{color:black;}
+	</style>
+	<!-- *****************************************************
+	     Titel der Seite, erscheint in der Browser-Kopfleiste -->
+	<title>head</title>
+</head>
+<body>
+	<h1 class="black" style="text-align: center;">head</h1>
+	<p>Dieser Absatz wurde mit dem Stylesheet "format.css" formatiert.</p>
+	Dies ist ein normaler Text.<br />
+	<div id="gelb">gelber Text</div>
+	<div id="gruen">grüner Text</div>	
+	<div class="black">normaler Text in weiss</div>
+</body>
+</html>
